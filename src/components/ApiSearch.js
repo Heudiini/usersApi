@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import User from "./User";
 import axios from "axios";
 
-import App from "../App";
-
 export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [results, setResults] = useState(null);
@@ -21,7 +19,7 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="div">
-        {results.map(function(user, index) {
+        {results.map(function (user, index) {
           return (
             <div className="div" key={index}>
               <User user={user} />
