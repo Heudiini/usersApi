@@ -1,0 +1,52 @@
+.app {
+  margin: auto;
+  max-width: 1200px;
+}
+
+section {
+  margin: auto;
+}
+body {
+  background-color: rgb(225, 227, 229);
+  color: rgb(0, 0, 0);
+}
+.pageTitle {
+  margin-bottom: 30px;
+  padding: 5% 1% 5% 1%;
+  text-transform: uppercase;
+  width: 100%;
+}
+.div {
+  margin: auto;
+
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.card {
+  margin: 8px;
+  width: 200px;
+  height: 250px;
+  border-radius: 8px;
+}
+.card-body {
+  margin: 0%;
+}
+.card-img-top {
+  width: 90px;
+  margin: auto;
+}
+.card-body .compTitle {
+  color: rgb(23, 125, 250);
+  text-transform: uppercase;
+}
+.footer {
+  margin-bottom: 0;
+  margin-top: 50px;
+  color: white;
+
+  padding: 2%;
+  text-transform: uppercase;
+  width: 100%;
+}
