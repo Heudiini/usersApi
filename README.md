@@ -1,7 +1,5 @@
-# Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-Api data feed into user cards. 
+## Api data feed into user cards. 
