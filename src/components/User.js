@@ -6,10 +6,10 @@ export default function User(props) {
   let name = props.user.name;
   let company = props.user.company.name;
   let email = props.user.email;
-  let id = props.user.id;
+  /*  let id = props.user.id;
   let website = props.user.website;
   let city = props.user.address.city;
-  let phone = props.user.phone;
+  let phone = props.user.phone; */
 
   return (
     <div>
