@@ -12,7 +12,7 @@ export default function User(props) {
   let phone = props.user.phone; */
 
   return (
-    <div>
+    <div className="div">
       <div className="card">
         <img src={logo} className="card-img-top img-rounded" alt="logo" />
         <div className="card-body">
