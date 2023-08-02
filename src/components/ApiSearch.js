@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+// ApiSearch.js (previously WeatherForecast.js)
+import React, { useState, useEffect } from "react";
 import User from "./User";
 import axios from "axios";
 
-export default function WeatherForecast(props) {
-  let [loaded, setLoaded] = useState(false);
-  let [results, setResults] = useState(null);
+export default function UserList(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [results, setResults] = useState(null);
+
+  useEffect(() => {
+    loadApi();
+  }, []);
+
   function loadApi() {
     let apiUrl = "https://jsonplaceholder.typicode.com/users";
 
     axios.get(apiUrl).then(handleResponse);
   }
-  function handleResponse(response) {
-    //console.log(response.data);
 
+  function handleResponse(response) {
     setResults(response.data);
     setLoaded(true);
   }
+
   if (loaded) {
     return (
       <div className="div">
@@ -29,8 +35,6 @@ export default function WeatherForecast(props) {
       </div>
     );
   } else {
-    loadApi();
-
     return null;
   }
 }

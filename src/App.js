@@ -1,22 +1,14 @@
 import React from "react";
-//import User from "./components/User";
-import Head from "./components/Head";
-import Footer from "./components/Footer";
-import ApiSearch from "./components/ApiSearch";
-/* import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom"; */
+import UserList from "./components/UserList";
 import "./App.css";
 
-export default function App() {
+function App() {
   return (
     <div className="app">
-      <Head />
-      <ApiSearch />
-      <Footer />
+      <h1 className="pageTitle">User List</h1>
+      <UserList />
     </div>
   );
 }
+
+export default App;
